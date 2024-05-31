@@ -96,10 +96,16 @@ body {
 
 }
 
+.azure-menu-logo-icon  {
+    display: none;
+    fill: black;
+    width: 20px;
+    
+}
 
 
 
-.icon-size svg {
+.azure-logo-svg svg {
     width: 100%;
     height: 100%;
 
@@ -265,6 +271,25 @@ body {
     color: #747479;
 }
 
+.azure-middle-log {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.azure-middle-logo-continer {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.azure-middle-logo-continer svg {
+    width: 100%;
+    height: 100%;
+}
 
 
 @media screen and (max-width: 1080px) {
@@ -289,10 +314,99 @@ body {
 }
 
 
+@media screen and (max-width: 860px) {
+    .azure-logo-text  {
+        margin-left: 12px;
+    }
 
+    .azure-nav-list  {
+        margin-left: 12px;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .azure-nav-list {
+        display: none;
+    }
 
+    .header-nav-left {
+        margin: 0;
+        min-width: 130px;
+        padding: 0;
+    }
 
+    .header-body {
+       
+       height: auto;
+       max-height: 78px;
+       
+    }
+
+    .main-header {
+        max-height: 78px;
+        padding: 12px;
+    }
+
+    .azure-logo-svg {
+        display: none;
+    }
+
+    .azure-menu-logo-icon {
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .azure-logo-icon {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        padding: 1px 6px;
+    }
+
+    .icon-size  {
+        align-items: center;
+        justify-content: center
+    }
+
+    .azure-logo-text {
+        margin-left: 4px;
+        margin-bottom: 5px;
+    }
+
+    .azure-middle-log {
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .Banner-content-text-paragraph div {
+        letter-spacing: -0.54px;
+    }
+
+    .header-nav-menu {
+        display: none;
+    }
+
+    .header-nav-signin2 {
+        padding: 20px;
+        
+    }
+
+    .header-nav-right-li-a {
+        padding: 0;
+        font-size: 14px;
+        
+    }
+
+    .seach-icon-button2 i  {
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+    .search-icon2 {
+        margin-left: 6px;
+    }
+}
 
 
 
@@ -353,7 +467,7 @@ body {
 }
 
 .Banner-content-text {
-    width: var(--layout-column-width);
+    width: 54%;
 }
 
 .Banner-content-text-title h1 {
@@ -394,11 +508,11 @@ body {
 }
 
 .Banner-content-text-button .startBtn {
-    padding: 14px 18px;
+    padding: 12px 16px;
     background-color: rgb(0, 120, 212);
     color: white;
     border-radius: 8px;
-    border: none;
+    border: 2px solid rgb(0, 120, 212);
     font-size: 15px;
     font-family: var(--font-bold);
     display: block;
@@ -416,11 +530,11 @@ body {
 
 
 .Banner-content-text-button .freeBtn {
-    padding: 14px 18px;
+    padding: 12px 16px;
     background-color: rgb(137, 196, 2);
     color: black;
     border-radius: 8px;
-    border: none;
+    border: 2px solid #89c402;
     font-size: 15px;
     font-family: var(--font-bold);
     text-align: center;
@@ -441,5 +555,231 @@ body {
 @media screen and (max-width: 1440px){
     .main-banner-content-wrapper {
         padding-left: 5%;
+    }
+
+    .Banner-content-text-paragraph div {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .main-banner-content-continer {
+        padding: 0;
+        padding-bottom: 56px;
+        min-height: auto;
+        max-height: auto;
+        
+    }
+
+    .Banner-content-text {
+        width: 100%;
+    }
+
+    .Banner-content-text-title h1 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1.6px;
+    }
+
+    .Banner-content-text-paragraph div {
+        margin-top: 12px;
+        width: 100%;
+        max-width: 100%;
+        line-height: 28px;
+    }
+
+    .Banner-content-text-mini-title {
+        margin-bottom: 12px;
+        line-height: 16px;
+    }
+
+    .Banner-content-text-button  {
+        margin-top: 24px;
+    }
+
+    .main-banner-content-wrapper {
+        margin: 0;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .main-banner-content-continer-content {
+        margin-bottom: 0;
+        padding-left: 0;
+        margin-top: 32px;
+    }
+
+    .Banner-content-text-button .startBtn {
+        padding: 12px;
+        
+    }
+
+    .Banner-content-text-button .freeBtn {
+        padding: 12px;
+        
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .Banner-content-text-button-row {
+        flex-direction: column;
+    }
+
+    .main-banner-content-continer {
+        padding: 0;
+        padding-bottom: 56px;
+        min-height: 456px;
+        
+        
+    }
+
+    .main-banner-content-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+
+/* ----------------main-content-body------------- */
+
+
+.azure-main-content-body {
+    width: 100%;
+}
+
+.main-body-size {
+    
+}
+
+.main-content-sticy-nav {
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px;
+}
+
+.sticy-nav-container {
+    
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 0 5%;
+    /* margin: auto; */
+    background-color: white;
+}
+
+.sticy-nav-content {
+    
+    
+    width: 100%;
+    max-width: 1328px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+
+.dropdown-nav-manu {
+    display: flex;
+    column-gap: 46px;
+    flex-wrap: wrap;
+}
+
+.dropdown-nav-manu-li {
+    margin-top: 16px;
+    list-style: none;
+    padding-left: 4px;
+}
+.dropdown-content {
+    padding-bottom: 16px;
+    font-size: 14px;
+    font-family: var(--font-bold);
+    color: rgb(5, 41, 68)
+}
+
+.dropdown-nav-manu-li-a {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.drop-down-active-indiacator  {
+    height: 4px;
+    background-color: rgb(0, 103, 184);
+    border-radius: 30px;
+}
+
+.dropdown-nav-manu-li-a  .inactive {
+    display: none;
+}
+
+.dropdow-green-btn {
+    background-color: rgb(137, 196, 2);
+    border: 2px solid rgb(137, 196, 2);
+    border-radius: 8px;
+    padding: 4px 12px;
+}
+
+.dropdow-green-btn-text {
+    font-size: 15px;
+    font-family: var(--font-bold);
+    text-wrap: nowrap;
+    color: black;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    cursor: pointer;
+}
+
+.sticy-dropdown {
+
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    padding: 4px;
+}
+
+
+
+
+.dropdown-element {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+   
+    background: transparent;
+    
+}
+
+.dropdown-option-element {
+    font-size: 12px;
+    font-family: var(--font-midium);
+    color: black;
+}
+
+.dropdown-option {
+    display: flex;
+    padding: 12px;
+    margin: 20px;
+}
+
+
+
+@media screen and (max-width: 860px) {
+    .sticy-nav-content {
+        display: none;
+    }
+
+    .sticy-dropdown {
+        display: flex;
+    }
+
+    .sticy-nav-container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
